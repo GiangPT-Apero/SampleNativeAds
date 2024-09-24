@@ -9,6 +9,11 @@ import com.example.samplenativeads.databinding.ActivitySampleNativeBinding
 
 class SampleNativeActivity : AppCompatActivity() {
 
+    companion object {
+        const val ID_ADS_NATIVE_NORMAL = "ca-app-pub-3940256099942544/2247696110"
+        const val ID_ADS_NATIVE_HIGH_PRIORITY = "ca-app-pub-3940256099942544/1044960115"
+    }
+
     private lateinit var binding: ActivitySampleNativeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

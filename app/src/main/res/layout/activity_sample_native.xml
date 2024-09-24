@@ -7,4 +7,20 @@
     android:layout_height="match_parent"
     tools:context=".SampleNativeActivity">
 
+    <FrameLayout
+        android:id="@+id/frAdsNativeNormal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <include
+            android:id="@+id/includeNativeNormal"
+            layout="@layout/sample_layout_shimmer_native"
+            android:visibility="gone" />
+    </FrameLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
